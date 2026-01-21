@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Staff — Capital Roleplay</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    text-align: center;
+    padding: 40px 0;
+    background: #1d1d2c;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #ff0000;
+  }
+  .container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #1f1f2e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  h2 {
+    color: #ff0000;
+    margin-top: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+  label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a3d;
+    color: #fff;
+    font-size: 16px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    background: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+  }
+  button:hover {
+    background: #e60000;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Capital Roleplay — Formulário de Staff</h1>
+</header>
+
+<div class="container">
+<form id="staffForm">
+
+  <h2>👤 Informações Pessoais</h2>
+
+  <label>Nome Completo</label>
+  <input type="text" required>
+
+  <label>Idade</label>
+  <input type="number" min="14" max="100" required>
+
+  <label>Discord (nome + tag)</label>
+  <input type="text" placeholder="ex: Usuario#1234" required>
+
+  <label>ID no servidor Capital Roleplay</label>
+  <input type="text" required>
+
+  <h2>🎮 Experiência em Roleplay</h2>
+
+  <label>Há quanto tempo joga na Capital Roleplay?</label>
+  <select required>
+    <option value="">Selecione...</option>
+    <option>Menos de 3 meses</option>
+    <option>3 a 6 meses</option>
+    <option>6 meses a 1 ano</option>
+    <option>Mais de 1 ano</option>
+  </select>
+
+  <label>Já jogou em outros servidores RP? Quais?</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Já foi staff em outro servidor? Explique.</label>
+  <textarea rows="4" required></textarea>
+
+  <label>Seu conhecimento das regras de RP</label>
+  <select required>
+    <option value="">Selecione...</option>
+    <option>Básico</option>
+    <option>Intermediário</option>
+    <option>Avançado</option>
+  </select>
+
+  <h2>🛡️ Sobre a Staff</h2>
+
+  <label>Para qual área deseja se candidatar?</label>
+  <select required>
+    <option value="">Selecione...</option>
+    <option>Suporte</option>
+    <option>Moderação</option>
+    <option>Administração</option>
+    <option>Qualquer área</option>
+  </select>
+
+  <label>Por que você quer ser staff da Capital Roleplay?</label>
+  <textarea rows="4" required></textarea>
+
+  <label>O que um staff nunca deve fazer?</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Qual o papel principal da staff em um servidor RP?</label>
+  <textarea rows="3" required></textarea>
+
+  <h2>⚠️ Situações</h2>
+
+  <label>O que você faria se visse um amigo quebrando regras?</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Como lidaria com uma denúncia sem provas?</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Como agiria com um jogador tóxico?</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Como resolveria uma discussão durante RP?</label>
+  <textarea rows="3" required></textarea>
+
+  <h2>⏱️ Disponibilidade</h2>
+
+  <label>Horas disponíveis por dia</label>
+  <input type="number" min="1" max="24" required>
+
+  <label>Dias da semana disponíveis</label>
+  <input type="text" placeholder="Ex: Seg a Sex / Finais de semana" required>
+
+  <h2>📜 Compromisso</h2>
+
+  <label>Já foi punido na Capital Roleplay? Explique.</label>
+  <textarea rows="3" required></textarea>
+
+  <label>Está ciente que abuso de poder resulta em remoção da staff?</label>
+  <select required>
+    <option value="">Selecione...</option>
+    <option>Sim</option>
+    <option>Não</option>
+  </select>
+
+  <label>Por que devemos escolher você?</label>
+  <textarea rows="4" required></textarea>
+
+  <button type="submit">Enviar Inscrição</button>
+
+</form>
+</div>
+
+<script>
+document.getElementById("staffForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("✅ Inscrição enviada com sucesso! Aguarde o retorno da staff da Capital Roleplay.");
+});
+</script>
+
+</body>
+</html>
